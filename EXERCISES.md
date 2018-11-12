@@ -12,6 +12,13 @@ npm install
 
 git checkout begin
 
+## Configure Code Coverage
+git checkout begin
+
+ng test
+
+
+
 
 
 
