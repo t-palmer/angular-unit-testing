@@ -24,8 +24,9 @@ ng generate service exercises/basic --flat=false
 
 ng test
 
+## Update Basic Service
+git checkout basic-service
 
-
-
+ng test
 
 
