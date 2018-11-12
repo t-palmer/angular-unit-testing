@@ -17,6 +17,13 @@ git checkout begin
 
 ng test
 
+## Basic Service
+git checkout coverage
+
+ng generate service exercises/basic --flat=false
+
+ng test
+
 
 
 

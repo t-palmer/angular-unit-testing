@@ -18,9 +18,15 @@ This is a project for Angular Unit Test training.
 - Remove local service variable initialization
 
 
-
-
-
 ## Component .spec File Checklist
+- Add `…` after the main describe function description
+- Create a nativeElement variable for the Component Template:
+`let nativeElement: HTMLElement;`
 
+### The beforeEach() function:
+- Remove detectChanges
+- Add extra lines to declarations
+- Add line to initialize the nativeElement variable:
+`nativeElement = fixture.nativeElement;`
+- Change should create to - should be created
 
