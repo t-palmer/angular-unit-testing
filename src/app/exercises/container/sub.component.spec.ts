@@ -7,7 +7,7 @@ describe('SubComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SubComponent ]
+      declarations: [SubComponent ]
     })
     .compileComponents();
   }));

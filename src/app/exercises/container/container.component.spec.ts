@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ContainerComponent } from './container.component';
-import { SubComponent } from './sub.component';
+import { SubStubComponent } from './sub-stub.component.spec';
 
 describe('ContainerComponent', () => {
   let component: ContainerComponent;
@@ -10,7 +10,7 @@ describe('ContainerComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         ContainerComponent,
-        SubComponent
+        SubStubComponent
       ]
     })
     .compileComponents();
