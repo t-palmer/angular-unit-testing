@@ -16,5 +16,4 @@ export class DetectChangesTesterComponent implements OnInit {
   ngOnInit() {
     console.log('ngOnInit', this.message);
   }
-
 }
