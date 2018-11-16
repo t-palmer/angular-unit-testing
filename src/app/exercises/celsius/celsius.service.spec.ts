@@ -13,4 +13,19 @@ describe('CelsiusService ...', () => {
   it('- should be created', () => {
     expect(service).toBeTruthy();
   });
+
+
+  describe('- The function toCelsius() ...', () => {
+    it(`- should return 0 when input is 32`, () => {
+      // Arrange
+      const fahrenheit = 32;
+      let celsius: number;
+
+      // Act
+      celsius = service.toCelsius(fahrenheit);
+
+      // Assert
+      expect(celsius).toEqual(0);
+    });
+  });
 });
