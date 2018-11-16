@@ -58,5 +58,13 @@ ng test
 ### Component Stub
 git checkout component-stub
 
-ng test
+### Component With Service
+git checkout celsius
+
+### Service Stub
+git checkout service-stub
+
+### Mocking Service Functions
+git checkout celsius-mock
+
 

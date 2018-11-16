@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CelsiusService } from './celsius.service';
 
 @Component({
   selector: 'app-celsius',
@@ -11,11 +12,12 @@ export class CelsiusComponent implements OnInit {
 
   // Add CelsiusService in the constructor
   constructor(
+    public celiusService: CelsiusService
   ) { }
 
   ngOnInit() {
     this.fahrenheit = 30;
-    // this.celsius = the result of calling CelsiusSerive with this.fahrenheit
+    this.celsius = this.celiusService.toCelsius(this.fahrenheit);
   }
 
 }
