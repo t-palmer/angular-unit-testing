@@ -23,7 +23,6 @@ describe('CelsiusComponent ...', () => {
   });
 
   it('- should be created', () => {
-    fixture.detectChanges();
     expect(component).toBeTruthy();
   });
 });

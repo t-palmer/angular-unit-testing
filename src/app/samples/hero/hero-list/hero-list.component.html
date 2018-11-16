@@ -1,0 +1,6 @@
+<ul *ngIf="heroes">
+  <li *ngFor="let hero of heroes">
+    <app-hero [hero]=hero (selected)="gotoDetail($event)">
+    </app-hero>
+  </li>
+</ul>

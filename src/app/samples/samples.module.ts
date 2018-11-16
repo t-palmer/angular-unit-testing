@@ -6,6 +6,8 @@ import { SimpleComponent } from './simple/simple.component';
 import { ParentComponent } from './parent-child/parent.component';
 import { ChildComponent } from './parent-child/child.component';
 import { DetectChangesTesterComponent } from './detect-changes-tester/detect-changes-tester.component';
+import {HeroListComponent} from './hero/hero-list/hero-list.component';
+import {HeroComponent} from './hero/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { DetectChangesTesterComponent } from './detect-changes-tester/detect-cha
     ChildComponent,
     ParentComponent,
     BlankComponent,
-    SimpleComponent
+    SimpleComponent,
+    HeroListComponent,
+    HeroComponent
   ],
   imports: [
     CommonModule
@@ -25,7 +29,9 @@ import { DetectChangesTesterComponent } from './detect-changes-tester/detect-cha
     ChildComponent,
     ParentComponent,
     BlankComponent,
-    SimpleComponent
+    SimpleComponent,
+    HeroListComponent,
+    HeroComponent
   ]
 })
 export class SamplesModule { }
