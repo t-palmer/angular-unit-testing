@@ -3,8 +3,8 @@ import { HeroListComponent } from './hero-list.component';
 import { HeroStubComponent } from '../hero/hero-stub.component.spec';
 import { HeroService } from '../hero.service';
 import { HeroStubService } from '../hero-stub.service.spec';
-import {Hero} from '../hero.types';
-import {asyncData} from '../../async-observable-helpers';
+import { Hero } from '../hero.types';
+import { asyncData } from '../../async-observable-helpers';
 
 describe('HeroListComponent ...', () => {
   let component: HeroListComponent;
