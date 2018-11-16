@@ -6,8 +6,8 @@ import { By} from '@angular/platform-browser';
 describe('HeroComponent ...', () => {
   let component: HeroComponent;
   let fixture: ComponentFixture<HeroComponent>;
-  let nativeElement: HTMLElement;
   let debugElement: any;
+  let heroDivDebugElement: any;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -21,8 +21,8 @@ describe('HeroComponent ...', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HeroComponent);
     component = fixture.componentInstance;
-    debugElement  = fixture.debugElement.query(By.css('.hero'));
-    nativeElement = debugElement.nativeElement;
+    debugElement  = fixture.debugElement;
+    heroDivDebugElement  = debugElement.query(By.css('.hero'));
   });
 
   it('- should be created', () => {
@@ -35,12 +35,13 @@ describe('HeroComponent ...', () => {
       // Arrange
       const mockHeroName = 'Mock Hero';
       component.hero = {name: mockHeroName};
+      const heroDivNativeElement = heroDivDebugElement.nativeElement;
 
       // Act
       fixture.detectChanges();
 
       // Assert
-      expect(nativeElement.textContent).toContain(mockHeroName);
+      expect(heroDivNativeElement.textContent).toContain(mockHeroName);
     });
   });
 
@@ -54,7 +55,7 @@ describe('HeroComponent ...', () => {
       component.selected.subscribe((hero: Hero) => clickedHero = hero);
 
       // Act
-      debugElement.triggerEventHandler('click', null);
+      heroDivDebugElement.triggerEventHandler('click', null);
 
       // Assert
       expect(clickedHero).toBe(mockHero);
